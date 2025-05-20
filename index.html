@@ -1,97 +1,120 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="sp">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WhatsApp Style Page - Dark</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #121212; /* Fondo negro */
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #e0e0e0;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="¡Descubre a nunutechh!  Aumenta tu productividad, simplifica tu vida y alcanza tus metas. ¡Compra ahora y transforma tu día a día!
+" />
+    <meta name="keywords" content="nunutechh" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Language" content="sp">
+    <title>nunitotechh</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111111;
+            font-family: Arial, sans-serif;
+        }
 
-    .whatsapp-box {
-      background-color: #1e1e1e; /* Caja oscura tipo WhatsApp */
-      width: 360px;
-      border-radius: 16px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      text-align: center;
-    }
+        .container {
+            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+            /* Sombra branca */
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            width: 90%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
 
-    /* Animación de salto */
-    @keyframes salto {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-    }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-    .whatsapp-box a.elementor-button {
-      background-color: #25D366;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 25px;
-      display: inline-block;
-      transition: background 0.3s;
-      animation: salto 1s infinite ease-in-out; /* Aplica la animación */
-    }
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
 
-    .whatsapp-box a.elementor-button:hover {
-      background-color: #1ebe5a;
-    }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
 
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #aaa;
-    }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
 
-    .footer a {
-      color: #25D366;
-      text-decoration: none;
-      margin: 0 5px;
-    }
+        .enter-btn {
+            background-color: #0602e7;
+            color: white;
+        }
 
-    .footer p {
-      margin-top: 10px;
-      font-size: 11px;
-      line-height: 1.5;
+        .exit-btn {
+            background-color: #555;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            button {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+    <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script><script>
+    function click() {
+      document.getElementById("goToPage").click();
     }
-  </style>
+    </script>
 </head>
+
 <body>
-
-  <div class="whatsapp-box">
-    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://nunutechs.vercel.app/whapp.html">
-      <span class="elementor-button-text">¡DESCUBRE TODO AHORA!</span>
-    </a>
-
-    <div class="footer">
-      <h4>Copyright 2025 – Nunutechh ®</h4>
-      <div>
-        <a href="https://nunutechs.vercel.app/whapp.html">Términos de Uso</a> – 
-        <a href="https://nunutechs.vercel.app/whapp.html">Privacidad</a>
-      </div>
-      <p>
-        Este sitio web no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que sales de Facebook, no es su responsabilidad, es de nuestro sitio web. 
-        Hacemos todo lo posible para indicar y mostrar claramente todas las pruebas de productos y utilizar resultados reales. 
-        No vendemos su dirección de correo electrónico ni ninguna información a terceros. Nunca hacemos ningún tipo de spam. 
-        Si tiene alguna pregunta, comuníquese con nosotros de lunes a viernes de 9:00 a. m. a 6:00 p. m.
-      </p>
+    <div class="container" id="clicable">
+        <h1>Verificación de Edad</h1>
+        <p>Este sistema está protegido. Para continuar, confirma tu edad.</p>
+        <div class="buttons">
+            <button class="enter-btn">Tengo 18 años o más</button>
+            <button class="exit-btn">Tengo menos de 18 años</button>
+        </div>
     </div>
-  </div>
 
+    <a id="goToPage" href="page.html" ></a>
+    <script>
+        document.getElementById("clicable").addEventListener("click", function (e) {
+            e.stopPropagation();
+            click();
+        });
+    </script>
 </body>
+
 </html>
